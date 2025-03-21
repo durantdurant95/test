@@ -6,8 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/second', function () {
-//     return view('second');
-// });
+Route::view(uri:'/home', view:'home');
 
-Route::view(uri:'/second', view:'second'); //Simpler sintax
+Route::view(uri:'/login', view:'login'); //Simpler sintax
