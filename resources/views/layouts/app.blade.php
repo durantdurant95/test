@@ -16,14 +16,13 @@
 </head>
 
 <body class="bg-white dark:bg-black text-black dark:text-white  flex min-h-screen flex-col">
-    <header class="shadow-md p-4 dark:shadow-slate-900">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">My Blog</h1>
+    <header class="shadow-md py-6 dark:shadow-slate-900">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="{{ url('/') }}" class="text-xl font-bold">My Blog</a>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="flex space-x-8">
+                    <li><a href="{{ url('/about') }}">About</a></li>
+                    <li><a href="{{ url('/contact') }}">Contact</a></li>
                 </ul>
             </nav>
         </div>
